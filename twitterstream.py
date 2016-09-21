@@ -7,10 +7,10 @@ import sentiment_mod as s
 
 
 #consumer key, consumer secret, access token, access secret.
-ckey="enter your twiiter app consumer key here"
-csecret="enter your twiiter app consumer secretr key here"
-atoken="enter your twiiter app access token here"
-asecret="enter your twiiter app access secret here"
+ckey="your twiiter app consumer key goes here"
+csecret="your twiiter app consumer secretr key goes here"
+atoken="your twiiter app access token goes here"
+asecret="your twiiter app access secret goes here"
 
 class listener(StreamListener):
 
@@ -22,7 +22,7 @@ class listener(StreamListener):
         print((tweet, sentiment_value, confidence))
 
         if confidence*100 >=80:
-            output = open("twitter-out.txt","a")
+            output = open("your output file goes here","a")
             output.write(sentiment_value)
             output.write('\n')
             output.close()
